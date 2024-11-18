@@ -39,6 +39,6 @@ app.get("/api/GetForms", Form.GetAllForms);
 app.delete("/api/DeleteFormById/:id", Form.DeleteForm);
 
 // Start the server on 127.0.0.1
-app.listen(Port, "127.0.0.1", () => {
+app.listen(Port, '0.0.0.0', () => {
   console.log(`Server started at ` + Port);
 });
