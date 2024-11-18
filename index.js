@@ -4,7 +4,7 @@ const app = express(); // Initialize Express app
 // Enable CORS for all routes
 const cors = require("cors");
 app.use(cors());
-const Port = 5000; // Specify the port number
+const Port =  process.env.PORT || 5000; // Specify the port number
 
 // importing all controllers
 const Form = require("./Controller/FormController");
